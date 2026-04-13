@@ -11,3 +11,7 @@ results/
 *.pth
 
 venv/
+
+*.csv
+
+*.xlsx
