@@ -1,0 +1,13 @@
+data/
+
+.idea/
+
+.ipynb_checkpoints/
+
+__pycache__/
+
+results/
+
+*.pth
+
+venv/
