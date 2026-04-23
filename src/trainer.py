@@ -1,8 +1,9 @@
 from torch.utils.data import DataLoader
 import torch
-import numpy as np
+
 
 class Trainer:
+
     def __init__(self, model, criterion, optimizer, device):
         self.model = model
         self.criterion = criterion
