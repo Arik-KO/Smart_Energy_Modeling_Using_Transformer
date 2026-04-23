@@ -10,6 +10,8 @@ import joblib
 df = pd.read_csv('../data/processed/energy_features_2019.csv')
 feature_columns = df.columns.to_list()
 feature_columns.remove("date")
+D_INPUT = len(feature_columns)
+print(D_INPUT)
 
 train_df = df[df["date"]< "2019-11-01"]
 val_df =  df[(df["date"] >= "2019-11-01") & (df["date"] < "2019-12-01")]

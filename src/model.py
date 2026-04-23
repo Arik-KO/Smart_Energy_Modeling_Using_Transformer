@@ -30,7 +30,7 @@ class Transformer(nn.Module):
 
         self.encoder = nn.TransformerEncoder(encoder_layer, num_layers= num_layers)
         self.reg_head = nn.Linear(embedd_dim, 1)
-        self.dropout - nn.Dropout(dropout)
+        self.dropout = nn.Dropout(dropout)
 
     def forward(self,x):
         x = self.emdedding_dimension(x)
